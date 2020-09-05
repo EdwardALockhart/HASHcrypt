@@ -8,7 +8,7 @@ Created By:
 Multi-Key One-Time Pad Cipher:
     Key1: Random state dictating the character-value mapping
     Key2: Randomly generated alphanumeric decryption key
-    Operation: XOR logical
+    Operation: XOR bit encryption
 
 Description:
     Encrypts and decrypts messages using a character-value dictionary controlled
