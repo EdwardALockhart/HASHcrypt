@@ -13,7 +13,7 @@ Description:
 Multi-Key One-Time Pad Cipher:
     Key1: Random state dictating the character-value mapping
     Key2: Randomly generated alphanumeric decryption key
-    Operation: XOR bit encryption
+    Operation: XOR bitwise encryption
   
 Strengths:
     The resulting ciphertext will be impossible to decrypt as long as:
