@@ -85,6 +85,18 @@ def valuelist_to_charstring(value_list, seed):
 
 #-------------------------------------------------------------------------------
 
+def xor(data, key):
+    ''' Conducts XOR bitwise operation between integers
+    INPUTS: data (integer list), key (integer list)
+    OUTPUTS: result (integer list) '''
+    
+    result = [(c ^ k) for c, k in zip(data, key)]
+    
+    # Return the list of results
+    return result
+
+#-------------------------------------------------------------------------------
+
 def op_selection():
     ''' Gets the user operation selection
     INPUTS: user
@@ -145,7 +157,7 @@ def encrypt(seed):
     key_values = charstring_to_valuelist(key, seed)
     
     # Operate between the message and the key values using XOR
-    value_list = [(c ^ k) for c, k in zip(message_values, key_values)]
+    value_list = xor(message_values, key_values)
     
     # Produce a string of the joined 3-digit value blocks
     enc_message = ' '.join([str(val).zfill(3) for val in value_list])
@@ -202,7 +214,7 @@ def decrypt(seed):
     key_values = charstring_to_valuelist(key, seed)
     
     # Operate between the message and the key values using XOR
-    message_values = [(c ^ k) for c, k in zip(enc_message_values, key_values)]
+    message_values = xor(enc_message_values, key_values)
     
     # Translate the value list into characters
     message_string = valuelist_to_charstring(message_values, seed)
