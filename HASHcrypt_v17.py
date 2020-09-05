@@ -280,6 +280,7 @@ def HASHcrypt():
         # If no error, break out of the loop
         break
 
+    # Get user menu selection
     selection = op_selection()
     # If 1 is selected, run the encryption operation
     if selection == 1:
