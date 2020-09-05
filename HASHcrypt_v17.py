@@ -18,9 +18,9 @@ Description:
 Usage:
     The resulting ciphertext will be impossible to decrypt as long as:
 
-    The key is truly random.
-    The key is at least as long as the plaintext.
-    The key is never reused in whole or in part
+    The key is truly random (achieved in code).
+    The key is at least as long as the plaintext (achieved in code).
+    The key is never reused in whole or in part (achieved in code).
     The key and random state are kept completely secret.
 
 '''
