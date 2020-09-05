@@ -34,7 +34,7 @@ Usage:
     The script returns the encrypted message and unique key
     
     Decryption:
-    Enter random state used to encrypt the original message
+    Enter the random state used to encrypt the original message
     Enter the encrypted message
     Enter the corresponding unique key
     The character-value mapping converts the key into a list of integers
