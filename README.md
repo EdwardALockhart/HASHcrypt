@@ -1,9 +1,7 @@
 # HASHcrypt
 
 > Multi-Key One-Time Pad Cipher
-
-## Description
-Encrypts and decrypts messages using a character-value dictionary controlled by a user-defined random state and a securely-random decryption key unique to each encrypted message.
+> Encrypts and decrypts messages using a character-value dictionary controlled by a user-defined random state and a securely-random decryption key unique to each encrypted message.
 
 > Strengths
 The resulting ciphertext will be impossible to decrypt as long as:
