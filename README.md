@@ -3,7 +3,7 @@
 ### Multi-Key One-Time Pad Cipher
 > Encrypts and decrypts messages using a character-value dictionary controlled by a user-defined random state and a securely-random decryption key unique to each encrypted message.
 
-> Strengths
+### Strengths
 The resulting ciphertext will be impossible to decrypt as long as:
 
  - The key is truly random (achieved in code).
@@ -12,7 +12,7 @@ The resulting ciphertext will be impossible to decrypt as long as:
  - The key and random state are kept completely secret.
 
 ### Usage
-> Encryption:
+## Encryption:
  - Define a reproducible random state which dictates the character-value mapping
  - Enter a plaintext message
  - A securely-random key is generated
@@ -21,7 +21,7 @@ The resulting ciphertext will be impossible to decrypt as long as:
  - The cipher values are joined into a list as the encrypted message
  - The script returns the encrypted message and unique key
  
- > Decryption:
+## Decryption:
  - Enter the random state used to encrypt the original message
  - Enter the encrypted message
  - Enter the corresponding unique key
